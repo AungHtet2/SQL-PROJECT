@@ -9,6 +9,7 @@ SELECT skill_name.skills AS skills,
 FROM skill_name
     LEFT JOIN job_posting_fact ON job_posting_fact.job_id = skill_name.job_id
 WHERE job_title_short = 'Data Analyst'
+    AND job_location = 'Anywhere'
 GROUP BY skills
 ORDER BY skills_count DESC
 LIMIT 10
