@@ -12,4 +12,4 @@ WHERE job_title_short = 'Data Analyst'
     AND job_location = 'Anywhere'
 GROUP BY skills
 ORDER BY Demand_count DESC
-LIMIT 10
+LIMIT 5
